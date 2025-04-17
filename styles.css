@@ -1,0 +1,163 @@
+@keyframes move-in{
+    0%{transform: translateY(-800vh);}
+    80%{
+        transform: translateY(-800vh);
+    }
+    100%{transform: translateY(0vh);}
+}
+
+@keyframes plop{
+    0%{
+        transform: scale(1.17);
+    }
+    70%{
+        transform: scale(1.17);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+body{
+    background-color: #000000;
+    color: #2c2932;
+    margin: 0px;
+
+}
+
+
+#human-corner{
+    background-image: url(paper.jpg);
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+}
+#newspaper-body{
+    /* background-image: url(newspaper.jpg);*/
+    
+    
+    border-radius: 0 0 25px 25px;
+    width: 80vw;
+
+    padding: 5vw;
+    margin: 5vw;
+    background-repeat: repeat;
+    animation: move-in 3.75s ease-in;
+    opacity: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 98%, rgba(0, 0, 0, 0.75) 100%), url(paper.jpg) repeat-y 100% 100%;
+}
+
+
+#newspaper-body-outer{
+    animation: plop 4s ease-in;
+}
+
+
+.belligerent-section{
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    width: 20vw;
+    padding: 2.5vw;
+    height: 60vh;
+    border: 1px solid black;
+}
+
+#belligerents-table{
+    width: 60vw;
+    margin: 0 10vw;
+    border-spacing: 3.3vw;
+}
+
+#belligerents-table td{
+    vertical-align: top;
+}
+
+#belligerents-table td{
+    vertical-align: top;
+}
+
+
+h1, h2, #subtext, h3, h4{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 15vmin;
+}
+
+h2{
+    font-size: 10vmin;
+}
+
+h3{
+    font-size: 5vmin;
+}
+
+p, li{
+    font-size: 3vmin;
+    font-family: sans-serif;
+}
+
+.red{
+    color: rgb(154, 0, 0);
+}
+
+.belligerent-head{
+    font-size: 3vmin;
+}
+
+.countries{
+    border-spacing: 2vmin;
+}
+
+.countries-flag{
+    height: 6vh;
+    width: 4vw;
+}
+
+#map-zone, #causes, #human-corner{
+    
+    padding: 3vw;
+}
+
+#map-zone, #causes{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#human-corner{
+    background-color: #d3d3d3; 
+
+}
+
+#map-zone table{
+    border-spacing: 3vw;
+}
+
+#map-zone table td{
+    vertical-align: top;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+#fg{
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(bg.jpg);
+    background-size: 100vw;
+    background-repeat: repeat-y;
+    z-index: -2;
+}
